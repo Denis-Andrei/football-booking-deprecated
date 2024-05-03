@@ -8,7 +8,7 @@ function App() {
   const getApiMessage = async () => {
 
     console.log(process.env.REACT_APP_API_GATEWAY_URL);
-    const response = await fetch(`${process.env.REACT_APP_API_GATEWAY_URL}hello`, {
+    const response = await fetch("https://f8xj4v5uv4.execute-api.eu-west-2.amazonaws.com/prod/hello", {
       mode: 'cors'
     });
 
