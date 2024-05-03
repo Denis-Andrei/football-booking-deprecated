@@ -13,7 +13,7 @@ export class FootballBookingInfraStack extends cdk.Stack {
 
     const footballBookingAmplifyApp = new amplify.CfnApp(this, 'FootballBookingAmplifyApp', {
         name: 'football-booking',
-        repository: '',
+        repository: 'https://github.com/Denis-Andrei/football-booking',
         accessToken: cdk.SecretValue.secretsManager('github-access-token').unsafeUnwrap(),
         environmentVariables: [
             {
