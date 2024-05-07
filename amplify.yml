@@ -6,8 +6,8 @@ frontend:
         - npm ci
     build:
       commands:
-        - echo "REACT_APP_API_GATEWAY_URL=$API_GATEWAY_URL" > .env
-        - echo "REACT_APP_REGION=$REGION" > .env
+        - echo "REACT_APP_API_GATEWAY_URL=$API_GATEWAY_URL" >> .env
+        - echo "REACT_APP_REGION=$REGION" >> .env
         - npm run build
   artifacts:
     baseDirectory: build
