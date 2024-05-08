@@ -2,10 +2,12 @@ import React from 'react';
 import {Authenticator} from "@aws-amplify/ui-react";
 import '@aws-amplify/ui-react/styles.css';
 import {Amplify} from "aws-amplify";
-import awsExports from './aws-exports';
+import awsConfig from './aws-config';
 
-Amplify.configure(awsExports);
+Amplify.configure(awsConfig);
+
 function App({Component, pageProps}) {
+    console.log(awsConfig);
 
   return (
       <Authenticator>
