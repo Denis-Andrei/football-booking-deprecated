@@ -15,11 +15,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start:local": "../node_modules/.bin/env-cmd -f client/.env.local react-scripts start",
-    "start": "../node_modules/.bin/react-scripts start",
-    "build": "../node_modules/.bin/react-scripts build",
-    "test": "../node_modules/.bin/react-scripts test",
-    "eject": "../node_modules/.bin/react-scripts eject"
+    "start:local": "./node_modules/.bin/env-cmd -f client/.env.local react-scripts start",
+    "start": "./node_modules/.bin/react-scripts start",
+    "build": "./node_modules/.bin/react-scripts build",
+    "test": "./node_modules/.bin/react-scripts test",
+    "eject": "./node_modules/.bin/react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
